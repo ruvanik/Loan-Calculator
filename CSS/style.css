@@ -1,0 +1,178 @@
+
+	body{
+	font-family:Arial, Verdana, sans-serif;
+	color:#444444;
+	background-color:#e5e5e5;
+	}
+	
+	#form{
+	width:950px;
+	height:600px;
+	background-color:#fff	;
+	margin:70px auto 10px auto;
+	border-radius:15px;
+	position: relative;
+    box-shadow: 0px 0px 10px #777777;
+	}
+	
+    h1{
+	color:#444444;
+	margin-top:60px;
+	margin-left:100px;
+	padding:10px;
+	padding-left:60px;
+	position:absolute;
+	}
+	
+	h1.headtitle{
+	background-image: url("images/piggy.png");
+	background-repeat:no-repeat;
+	}
+	.colA{
+	width: 370px;
+	height: 380px;
+
+	position:absolute;
+	margin-left:80px;
+	margin-top:140px;;
+	padding:10px;
+	}
+	
+	.cellA{
+	width:350px;
+	height:100px;
+	padding:10px;
+	
+	
+	}
+	
+	.colB{
+	width: 370px;
+	height: 380px;
+	position:absolute;
+	margin-top:140px;
+	margin-left:475px;
+	padding:10px;
+	}
+	
+	#results{
+	width:370px;
+	height:300px;
+	border-radius:8px;
+	margin-left:15px 0 10px 0;
+	}
+	
+	h2{
+	padding:10px;
+	color:red;	
+	margin-left:40px;
+	}
+	
+	ul>li{
+	border-top: 1px dotted #444444;
+	padding:10px;
+	list-style-type:none;
+	font-weight:bold;
+	}
+	ul>li>span{
+	color:#83389b;
+	font-weight:bold;
+	font-size:18px;
+	}
+	
+	.slider[type=range]{
+	border: 0px solid #bdbdbd;
+	border-radius:5px;
+	padding-top:20px;
+	padding-left:0px;
+	width:95%;
+	height:7px;	
+	}
+	
+	div >label{
+   
+	color:#444444;
+	font-weight:bold;
+	font-size:18px;
+	display:inline;
+	float:left;
+	}
+		
+
+
+.poundSign {
+  display:inline-block;
+  position: absolute;
+  transform: translate(8, 55%);
+  top: 5%;
+  width: 20px;
+  text-align: center;
+  font-style: normal;
+  margin-left:20px;
+  padding-top:6px;
+
+ 
+}
+
+.monthSign{
+  display:inline-block;
+  position: absolute;
+  transform: translate(8, 55%);
+  top: 35%;
+  width: 20px;
+  text-align: center;
+  font-style: normal;
+  margin-left:60px;
+  padding-top:6px;
+
+ 
+}
+
+input[type="text"] {
+    border:1px solid #p1p1p1;
+	margin-right:90px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-radius:5px;
+	font-size:16px;
+	font-weight:bold;
+	display:inline;
+	float:right;
+	width:120px;
+	height:25px;
+	text-indent:10px;
+	
+	
+}
+
+i{
+	color:#444444;
+	font-weight:bold;
+}
+
+
+#borrowInput{
+	text-indent:25px;
+} 
+
+input[type=text]:focus{
+  border-radius:5px;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+input[type=range]:focus {
+  color: #52A2E8; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+footer {
+    height: 100px;
+    background: #e5e5e5;
+}
+
+	
+	
+	
+	
+	
+	

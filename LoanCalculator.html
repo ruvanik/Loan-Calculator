@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Calculator </title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/slider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	  
+	<style type="text/css">
+	
+	h1.headtitle{
+	background-image: url("images/piggy.png");
+	color:#444444;}
+	</style>
+</head>
+
+<body>
+	<div id="form">
+	<form name="loandata" id="loandata" oninput="calculate()"; >
+	
+
+	    <h1 class="headtitle">Loan Calculator</h1>
+		<div class="colA">		
+			<div id="LoanAmountSlider" class="cellA">
+				 <div class="inputLabel"> 
+				   <label for="borrow">Loan Amount:</label>			
+				 </div>
+				 <div id="input-icon1" class="textValues">
+					<input id="borrowInput" type="text" name="amount" onkeypress="return validNumber(event)" onchange="calculate()" >
+					<i class="poundSign">&#163; </i>
+				 </div>
+				 <div class="sliderCol"> 
+				   <input type="range" id="valAmount" name="rangeInput1" for="amount" class="slider" min="1000" max="100000" step="500" value="1000" onchange="updateTextInput1(this.value)" >
+				 </div>				 
+				 
+			
+			</div>
+			<div id="LoanDurationSlider" class="cellA">
+				 <div class="inputLabel"> 
+					<label for="duration">Loan Duration:</label>
+				 </div>
+				 <div id="input-icon2" class="textValues">
+				       <input id="durationInput" type="text" name="months"  maxlength="2" onkeypress="return validNumber(event)" onchange="calculate()" >
+					   <i class="monthSign">months </i>
+					  
+				 </div>
+				 <div class="sliderCol"> 
+				    <input type="range" id="valDuration" name="rangeInput2" for="duration" class="slider" min="12" max="120" step="12" value="0" onchange="updateTextInput2(this.value)">
+				 </div>
+				 
+			</div>
+			
+			<div id="LoanAPRSlider" class="cellA">
+				 <div class="inputLabel"> 
+					<label for="apr">APR %:</label>
+				 </div>
+				 <div id="input-icon3" class="textValues">
+				    <input id="aprInput" type="text" name="apr" onkeypress="return validNumber(event)" onchange="calculate()"> 		
+				 </div>
+				 <div class="sliderCol"> 
+				    <input  type="range" id="valAPR" name="rangeInput3" for="apr" class="slider" min="2.00" max="30.00" step="0.1" value="0">
+				 </div>
+				 
+			</div>
+		</div>
+	
+		<div class="colB">
+		 	<div id="results">
+			
+				<h2 class="ResultTitle"> Summary </h2>
+				<ul>
+					<li>Representative APR (%):
+					<span id="APR" class="result">  	</span>	
+					</li>
+					<li>Monthly Repayment :
+					<span id="MonthlyRepayment" class="result" name="MonthlyPayment">    </span>
+					</li>
+					<li>Total Repayment :
+					<span id="TotalRepayment" class="result" name="TotalPayment">  </span>
+					</li>
+					<li>Total Interest :
+					<span id="TotalInterest" class="result" name="TotalInterest">  </span>
+					</li>
+				</ul>
+				 		
+			</div>
+		</div>
+	</form>
+	</div>
+	
+	 <script src="Javascript/script.js"></script> 
+</body>
+   <footer>
+   <div id="footerDetails">
+   <p></p>
+   </div>
+    </footer>
+</html>
+
